@@ -17,7 +17,7 @@
 }
 
 .top-section {
-  background: url(http://blogs.transparent.com/arabic/files/2016/08/space-624054_960_720.jpg) no-repeat center center/cover fixed;
+  background: url("http://blogs.transparent.com/arabic/files/2016/08/space-624054_960_720.jpg") no-repeat center center/cover fixed;
   background-size: cover;
   height: 560px;
   position: relative;
@@ -33,10 +33,7 @@
   font-family: LtBrown, serif;
   background-color: lightgrey;
   margin-top: -30px;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
 }
 
 p {
@@ -73,38 +70,34 @@ h4 {
 
 @media screen and (max-width: 480px) {
   #portfolio .row {
-    padding: 0px 0px 0px 0px;
+    padding: 0;
   }
-
   #portfolio {
-    padding: 40px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 40px 0 0;
+    margin: 0;
   }
-
   .view-first {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0;
+    margin: 0;
   }
-
   .view {
     margin-bottom: 20px;
   }
-
   .view h2 {
     margin-bottom: -40px;
   }
-
-  .view .mask, .view .content {
+  .view .content,
+  .view .mask {
     max-width: 100%;
     height: auto;
   }
-
   .profile-img {
     height: 70%;
     width: 70%;
     margin-left: 40px;
   }
 }
+
 .jumbotron.contact {
   margin-right: -60px;
   margin-left: -60px;
@@ -121,7 +114,8 @@ h4 {
   cursor: default;
 }
 
-.view .mask, .view .content {
+.view .content,
+.view .mask {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -143,7 +137,7 @@ h4 {
   font-size: 17px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.8);
-  margin: 20px 0 0 0;
+  margin: 20px 0 0;
 }
 
 .view p {
@@ -253,9 +247,9 @@ h4 {
   opacity: 1;
 }
 
+.view-first:hover a.info,
 .view-first:hover h2,
-.view-first:hover p,
-.view-first:hover a.info {
+.view-first:hover p {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
@@ -289,9 +283,9 @@ h4 {
 
 a:hover {
   color: black;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .icon-btn {
