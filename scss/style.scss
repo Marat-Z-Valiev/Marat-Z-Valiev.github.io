@@ -1,6 +1,8 @@
 //Variables
 $main-font: LtBrown, serif;
-$text-center: center; //Header
+$text-center: center;
+
+//Header
 
 .header-text {
   padding-top: 80px;
@@ -10,6 +12,7 @@ $text-center: center; //Header
   font-family: $main-font;
   text-transform: capitalize;
 }
+
 //Navigation bar
 
 .navbar {
@@ -32,6 +35,7 @@ $text-center: center; //Header
   font-size: 70px;
   margin-top: -60px;
 }
+
 //About section
 
 #about-section {
@@ -62,6 +66,7 @@ h4 {
   text-align: $text-center;
   font-size: 40px;
 }
+
 //Portfolio section
 
 #portfolio {
@@ -74,6 +79,7 @@ h4 {
   margin-left: 40px;
   margin-right: 40px;
 }
+
 //Responsive design settings - Starts
 @media screen and (max-width:480px) {
   #portfolio .row {
