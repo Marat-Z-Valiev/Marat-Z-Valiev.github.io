@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body h4 {
+  text-align: center;
+  font-size: 40px;
+}
+
 .header-text {
   padding-top: 80px;
   padding-bottom: 50px;
@@ -7,60 +19,58 @@
   text-transform: capitalize;
 }
 
+.navbar-right {
+  margin: 0;
+}
+
 .navbar {
   font-size: 16px;
   font-family: LtBrown, serif;
 }
 
-.welcome {
-  text-align: center;
-}
-
 .top-section {
-  background: url("https://image.ibb.co/hUfy6G/Background_image.jpg") no-repeat center center/cover fixed;
-  background-size: cover;
+  background: url("../images/Background_image.jpg") no-repeat center center/cover fixed;
   height: 560px;
   position: relative;
 }
 
-.fa-code {
+.top-section .welcome {
+  text-align: center;
+}
+
+.top-section .fa-code {
   font-size: 70px;
-  margin-top: -60px;
+  margin: 0;
 }
 
 #about-section {
   text-align: center;
   font-family: LtBrown, serif;
   background-color: lightgrey;
-  margin-top: -30px;
   padding: 40px;
 }
 
-p {
+#about-section .about-text {
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+#about-section .about-text p {
   text-align: left;
 }
 
-.img-round {
+#about-section .img-round {
   border-radius: 100%;
   height: 250px;
   width: 250px;
   margin-right: 200px;
 }
 
-.about-text {
-  margin-left: 50px;
-  font-size: 20px;
-}
-
-h4 {
-  text-align: center;
-  font-size: 40px;
-}
-
 #portfolio {
   background: #f5f5f5;
   color: #55606A;
   padding-top: 50px;
+  margin-top: 0;
 }
 
 #portfolio .row {
@@ -96,11 +106,6 @@ h4 {
     width: 70%;
     margin-left: 40px;
   }
-}
-
-.jumbotron.contact {
-  margin-right: -60px;
-  margin-left: -60px;
 }
 
 .view {
@@ -276,45 +281,61 @@ h4 {
   transition-delay: 0.2s;
 }
 
-.jumbotron.contact {
+.contact {
   border: 5px dotted #5c5c8a;
-  margin-top: 30px;
 }
 
-a:hover {
+.jumbotron {
+  margin: 0;
+}
+
+.jumbotron #contact {
+  text-align: center;
+}
+
+.jumbotron #contact a:hover {
   color: black;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.icon-btn {
+.jumbotron #contact .icon-btn {
   text-align: center;
   font-size: 30px;
   letter-spacing: 20px;
   text-indent: 30px;
 }
 
-.linkedin-icn:hover {
+.jumbotron #contact .linkedin-icn:hover {
   color: blue;
 }
 
-.facebook-icn:hover {
+.jumbotron #contact .facebook-icn:hover {
   color: green;
 }
 
-.freecodecamp-icn:hover {
+.jumbotron #contact .freecodecamp-icn:hover {
   color: red;
 }
 
-#contact {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.copyright {
+.jumbotron .copyright {
   font-weight: bold;
-  margin-down: 50px;
   text-align: center;
   margin-top: 30px;
+}
+
+.jumbotron .scrollTop {
+  float: right;
+}
+
+.jumbotron .scrollTop:hover {
+  color: #337ab7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+  .scrollTop {
+    margin: 0 auto;
+  }
 }
