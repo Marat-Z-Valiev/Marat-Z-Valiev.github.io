@@ -4,46 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Portfolio page</title>
-  <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <title>Marat Valiev - Portfolio page</title>
   <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <!--Navigation bar-->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-          <a class="navbar-brand" href="#">Marat Valiev</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right nav-scroll">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top text-right">
+    <a class="navbar-brand" href="#">Marat Valiev</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link"  href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
-      </div>
     </nav>
+  </header>
   <!--Main banner-->
-  <div class="jumbotron top-section" id="home">
-    <div class="welcome">
-      <h1 class="header-text">Portfolio</h1>
-      <i class="fa fa-code"></i>
+  <section>
+    <div class="jumbotron top-section" id="home">
+      <div class="welcome">
+        <h1 class="header-text">Portfolio</h1>
+        <i class="fa fa-code"></i>
+      </div>
     </div>
-  </div>
+  </section>
+
   <!--About section-->
   <div id="about-section" class="container-fluid">
     <div class="row">
       <div class="col-md-6">
-        <h4 style="font-size: 40px;">About</h4><br>
+        <h1>About</h1>
         <div class="about-text">
           <p>Hello and welcome to my portfolio page. I've been always fascinated by the world of web development and wanted to work as a web developer. I'm currently working as a Quality Assurance Analyst in web development company and trying to transition
             my experience and skills into a new profession as a front-end web developer. </p>
@@ -56,11 +55,11 @@
   </div>
   <!--Portfolio section-->
   <div id="portfolio">
-    <h4>Portfolio</h4><br><br>
+    <h1>Portfolio</h1>
     <div class="row">
       <!--First hover image-->
       <div class="col-md-6 view view-first">
-        <img src="../images/Tesla_tribute_page.jpg" class="img-responsive" alt="image is missing">
+        <img src="../images/Tesla_tribute_page.jpg" class="img-responsive" alt="Tribute page project image">
         <div class="mask">
           <h2>Tribute page</h2>
           <a href="https://marat-z-valiev.github.io/Nikola_Tesla_tribute_page/" target="_blank" class="info">Click here to see more</a>
@@ -71,7 +70,7 @@
       </div>
       <!---->
       <div class="col-md-6 view view-first" style="margin-bottom: 10px">
-        <img src="../images/Random_Quote_Machine.jpg" class="img-responsive">
+        <img src="../images/Random_Quote_Machine.jpg" class="img-responsive" alt="Random quote project page image">
         <div class="mask">
           <h2>Random Quote Machine</h2>
           <a href="https://marat-z-valiev.github.io/Random_quote_machine/" target="_blank" class="info">Click here to see more</a>
@@ -84,7 +83,7 @@
     <br>
     <div class="row">
       <div class="col-md-6 view view-first" style="margin-bottom: 10px">
-        <img src="../images/Local_weather_page.jpg" class="img-responsive">
+        <img src="../images/Local_weather_page.jpg" class="img-responsive" alt="Local weather page project image">
         <div class="mask">
           <h2>Local Weather Page</h2>
           <a href="https://marat-z-valiev.github.io/Local_weather_page/" target="_blank" class="info">Click here to see more</a>
@@ -94,7 +93,7 @@
         </div>
       </div>
       <div class="col-md-6 view view-first" style="margin-bottom: 10px">
-        <img src="https://www.wpfreeware.com/wp-content/uploads/2014/09/placeholder-images.jpg" class="img-responsive">
+        <img src="https://www.wpfreeware.com/wp-content/uploads/2014/09/placeholder-images.jpg" class="img-responsive" alt="Wikiviewer page project image">
         <div class="mask">
           <h2>Wikipedia viewer</h2>
           <a href="https://marat-z-valiev.github.io/Wikiviewer/" target="_blank" class="info">Click here to see more</a>
@@ -105,9 +104,10 @@
       </div>
     </div>
   </div>
-    <!--Footer section-->
+  <!--Footer section-->
+  <footer>
     <div class="jumbotron contact">
-      <h4>Contact</h4>
+      <h1>Contact</h1>
       <div id="contact" class="container-fluid">
         <a href="https://ca.linkedin.com/in/marat-valiev-89352390" target="_blank" class="icon-btn linkedin-icn"><i class="fa fa-linkedin"></i></a>
         <a href="javascript:void(0)" target="_blank" class="icon-btn facebook-icn"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
@@ -119,9 +119,11 @@
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+  </footer>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

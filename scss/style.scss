@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 //Variables
-$main-font: LtBrown, serif;
+$main-font: 'Pacifico', LtBrown, serif;
 $text-center: center; //Global
 
 body {
@@ -7,25 +9,20 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
+}
 
-  h4 {
-    text-align: $text-center;
-    font-size: 40px;
-  }
+h1{
+  text-transform: uppercase;
+  font-family: $main-font;
+  text-align: center;
 }
 //Header
 .header-text {
   padding-top: 80px;
   padding-bottom: 50px;
   margin-top: 20px;
-  color: #6600cc;
-  font-family: $main-font;
-  text-transform: capitalize;
 }
 //Navigation bar
-.navbar-right{
-  margin: 0;
-}
 
 .navbar {
   font-size: 16px;

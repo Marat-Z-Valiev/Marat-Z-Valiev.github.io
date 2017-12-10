@@ -1,6 +1,6 @@
 //Select element in the header
-$(".nav a").on("click", function() {
-  $(".nav").find(".active").removeClass("active");
+$(".nav-item a").on("click", function() {
+  $(".nav-item").removeClass("active");
   $(this).parent().addClass("active");
 });
 
@@ -9,7 +9,7 @@ $(function() {
   $('.nav-scroll a').click(function(e) {
     e.preventDefault();
     $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top - 50
+      scrollTop: $($.attr(this, 'href')).offset().top - 100
     }, 750);
   });
 });
