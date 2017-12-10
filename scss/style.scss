@@ -47,7 +47,7 @@ h1{
 #about-section {
   text-align: $text-center;
   font-family: $main-font;
-  background-color: lightgrey;
+  background-color: #4594A4;
   padding: 40px;
 
   .about-text {
@@ -62,8 +62,6 @@ h1{
   .img-round {
     border-radius: 100%;
     height: 250px;
-    width: 250px;
-    margin-right: 200px;
   }
 }
 //Portfolio section
