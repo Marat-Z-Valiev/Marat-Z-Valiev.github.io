@@ -17,7 +17,7 @@ $(function() {
 //Hide the menu after click
 $('.nav a').on('click', function() {
   $('.btn-navbar').click();
-  $('.navbar-toggle').click();
+  $('.navbar-toggler').click();
 });
 
 //Scroll to the top
