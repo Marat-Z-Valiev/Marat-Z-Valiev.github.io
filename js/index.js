@@ -15,8 +15,7 @@ $(function() {
 });
 
 //Hide the menu after click
-$('.nav a').on('click', function() {
-  $('.btn-navbar').click();
+$('.navbar-nav a').on('click', function() {
   $('.navbar-toggler').click();
 });
 
