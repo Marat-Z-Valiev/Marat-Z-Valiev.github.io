@@ -1,4 +1,4 @@
-//Select element in the header
+//Highlight the element in the header
 $(".nav-item a").on("click", function() {
   $(".nav-item").removeClass("active");
   $(this).parent().addClass("active");
@@ -15,9 +15,11 @@ $(function() {
 });
 
 //Hide the menu after click
-$('.navbar-nav a').on('click', function() {
-  $('.navbar-toggler').click();
-});
+if($(window).width() < 991){
+  $('.navbar-nav a').on('click', function() {
+    $('.navbar-toggler').click();
+  });
+}
 
 //Scroll to the top
 $("#scrollTop").click(function(e) {
