@@ -103,7 +103,7 @@ h1 {
 }
 
 .btn span {
-  display: inline-block;
+  vertical-align: 5px;
 }
 
 .btn .fa {
@@ -147,10 +147,6 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
-}
-
-.contact .scrollTop {
-  float: right;
 }
 
 .contact .scrollTop:hover {
