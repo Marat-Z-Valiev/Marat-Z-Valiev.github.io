@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico'); //Variables
 $main-font: 'Pacifico', LtBrown, serif;
-$text-center: center; //Global
 
 body {
   margin: 0;
@@ -15,14 +14,16 @@ h1 {
   text-align: center;
 }
 //Header
-
 .header-text {
   padding-top: 80px;
   padding-bottom: 50px;
   margin-top: 20px;
 }
-//Navigation bar
 
+.code{
+  text-align: center;
+}
+//Navigation bar
 .navbar {
   font-size: 16px;
   font-family: $main-font;
@@ -36,13 +37,12 @@ h1 {
   margin-bottom: 0;
 
   .welcome {
-    text-align: $text-center;
+    text-align: center;
   }
 }
 //About section
-
 .about {
-  text-align: $text-center;
+  text-align: center;
   font-family: $main-font;
   background-color: #4594A4;
   padding: 50px;
@@ -62,16 +62,21 @@ h1 {
   }
 }
 //Portfolio section
-
 .portfolio {
-  text-align: $text-center;
+  text-align: center;
   font-family: $main-font;
   background: #f5f5f5;
   padding-top: 50px;
 
-  h3{
-  font-size: 1.50rem !important;
-  margin-bottom: 20px;
+  .line {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  h3 {
+    font-size: 1.50rem !important;
+    margin-bottom: 20px;
   }
 
   .img {
@@ -98,7 +103,7 @@ h1 {
 
 .projects {
   h2 {
-    text-align: $text-center;
+    text-align: center;
     margin-bottom: 20px;
   }
 }
@@ -121,12 +126,10 @@ h1 {
     margin-right: 5px;
   }
 }
-
 //Footer section
-
 .contact {
   background-color: #4594A4;
-  text-align: $text-center;
+  text-align: center;
   font-family: $main-font;
   padding: 70px;
 
@@ -135,7 +138,7 @@ h1 {
   }
 
   .icon-btn {
-    text-align: $text-center;
+    text-align: center;
     font-size: 30px;
     letter-spacing: 20px;
     text-indent: 30px;
@@ -155,20 +158,17 @@ h1 {
 
   .copyright {
     font-weight: bold;
-    text-align: $text-center;
+    text-align: center;
     margin-top: 30px;
   }
 
   .scrollTop {
-
     &:hover {
       color: #337ab7;
       cursor: pointer;
     }
   }
 }
-
-
 // Responsive design
 @media only screen and (max-width: 991px) {
   // Navigation bar sections
