@@ -4,11 +4,11 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
+  font-family: "Pacifico", LtBrown, serif;
 }
 
 h1 {
   text-transform: uppercase;
-  font-family: "Pacifico", LtBrown, serif;
   text-align: center;
 }
 
@@ -24,7 +24,6 @@ h1 {
 
 .navbar {
   font-size: 16px;
-  font-family: "Pacifico", LtBrown, serif;
   background-color: #4594A4 !important;
 }
 
@@ -41,7 +40,6 @@ h1 {
 
 .about {
   text-align: center;
-  font-family: "Pacifico", LtBrown, serif;
   background-color: #4594A4;
   padding: 50px;
 }
@@ -62,7 +60,6 @@ h1 {
 
 .portfolio {
   text-align: center;
-  font-family: "Pacifico", LtBrown, serif;
   background: #f5f5f5;
   padding-top: 50px;
 }
@@ -120,13 +117,13 @@ h1 {
 }
 
 .btn .fa {
+  font-size: 3em;
   margin-right: 5px;
 }
 
 .contact {
   background-color: #4594A4;
   text-align: center;
-  font-family: "Pacifico", LtBrown, serif;
   padding: 70px;
 }
 
@@ -135,28 +132,29 @@ h1 {
 }
 
 .contact .icon-btn {
-  text-align: center;
-  font-size: 30px;
-  letter-spacing: 20px;
+  font-size: 40px;
   text-indent: 30px;
 }
 
-.contact .linkedin-icn:hover {
+.contact .linkedin-icon:hover {
   color: #0E09AD;
 }
 
-.contact .facebook-icn:hover {
+.contact .mail-icon:hover {
   color: #47FFF3;
 }
 
-.contact .freecodecamp-icn:hover {
-  color: #FF2403;
+.contact .github-icon:hover {
+  color: #83C217;
 }
 
 .contact .copyright {
   font-weight: bold;
-  text-align: center;
   margin-top: 30px;
+}
+
+.contact .scrollTop {
+  float: right;
 }
 
 .contact .scrollTop:hover {
@@ -164,9 +162,21 @@ h1 {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 992px) {
+  .portfolio .project-description {
+    height: 130px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   ul li {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio .project-description {
+    height: 200px;
   }
 }
 
@@ -177,7 +187,16 @@ h1 {
   .about .img-round {
     height: 200px;
   }
-  .scrollTop {
-    margin: 0 auto;
+  .portfolio .project-description {
+    height: 200px;
+  }
+  .contact {
+    padding: 50px;
+  }
+  .contact .icons {
+    margin-right: 20px;
+  }
+  .contact .scrollTop {
+    float: none;
   }
 }
