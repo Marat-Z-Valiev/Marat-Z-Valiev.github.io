@@ -7,26 +7,6 @@ body {
   font-family: "Pacifico", LtBrown, serif;
 }
 
-h1 {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.header-text {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  margin-top: 20px;
-}
-
-.header-text .tags {
-  font-size: 1.7em;
-}
-
-.navbar {
-  font-size: 16px;
-  background-color: #4594A4 !important;
-}
-
 .top-section {
   background: url("../images/Background_image.jpg") no-repeat center center/cover fixed;
   height: 560px;
@@ -36,6 +16,23 @@ h1 {
 
 .top-section .welcome {
   text-align: center;
+}
+
+.top-section h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-top: 20px;
+  padding-top: 180px;
+}
+
+.top-section .fa-code {
+  font-size: 4.5em;
+}
+
+.navbar {
+  font-size: 16px;
+  background-color: #4594A4 !important;
 }
 
 .about {
@@ -183,10 +180,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 360px) {
-  h1 {
-    font-size: 2.2em;
-  }
+@media screen and (min-width: 360px) {
   .about {
     padding: 30px 20px 20px;
   }

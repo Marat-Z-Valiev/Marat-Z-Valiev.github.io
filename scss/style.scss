@@ -9,26 +9,7 @@ body {
   font-family: $main-font;
 }
 
-h1 {
-  text-transform: uppercase;
-  text-align: center;
-}
-//Header
-.header-text {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  margin-top: 20px;
-
-  .tags{
-    font-size: 1.7em;
-  }
-}
-
-//Navigation bar
-.navbar {
-  font-size: 16px;
-  background-color: #4594A4 !important;
-}
+//Banner
 
 .top-section {
   background: url("../images/Background_image.jpg") no-repeat center center / cover fixed;
@@ -39,7 +20,26 @@ h1 {
   .welcome {
     text-align: center;
   }
+
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    padding-top: 180px;
+  }
+
+  .fa-code{
+    font-size: 4.5em;
+  }
 }
+
+//Navigation bar
+.navbar {
+  font-size: 16px;
+  background-color: #4594A4 !important;
+}
+
 //About section
 .about {
   text-align: center;
@@ -168,6 +168,7 @@ h1 {
 }
 // Responsive design
 @media screen and (min-width: 992px) {
+
   //Portfolio
   .portfolio {
     .project-description {
@@ -176,6 +177,7 @@ h1 {
   }
 }
 @media screen and (max-width: 991px) {
+
   // Navigation bar sections
   ul {
     li {
@@ -187,6 +189,7 @@ h1 {
   }
 }
 @media screen and (max-width: 768px) {
+
   //Portfolio
   .portfolio {
     .project-description {
@@ -194,12 +197,8 @@ h1 {
     }
   }
 }
-@media screen and (max-width: 360px) {
-//Banner
-h1 {
-  font-size: 2.2em;
-}
 
+@media screen and (min-width: 360px){
   // Profile photo
   .about {
     padding: 30px 20px 20px;
