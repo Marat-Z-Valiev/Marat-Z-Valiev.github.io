@@ -167,7 +167,7 @@ h1 {
   }
 }
 // Responsive design
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   //Portfolio
   .portfolio {
     .project-description {
@@ -175,7 +175,7 @@ h1 {
     }
   }
 }
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   // Navigation bar sections
   ul {
     li {
@@ -186,7 +186,7 @@ h1 {
     }
   }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   //Portfolio
   .portfolio {
     .project-description {
@@ -195,6 +195,11 @@ h1 {
   }
 }
 @media screen and (max-width: 360px) {
+//Banner
+h1 {
+  font-size: 2.2em;
+}
+
   // Profile photo
   .about {
     padding: 30px 20px 20px;
