@@ -64,6 +64,9 @@ body {
 .portfolio .line {
   border: 0;
   height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0, 0, 0, 0.75)), to(transparent));
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
 }
 
@@ -82,13 +85,17 @@ body {
   cursor: pointer;
   opacity: 0.7;
   -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  -webkit-transition-property: opacity, -webkit-box-shadow;
+  transition-property: opacity, -webkit-box-shadow;
+  -o-transition-property: box-shadow, opacity;
   transition-property: box-shadow, opacity;
+  transition-property: box-shadow, opacity, -webkit-box-shadow;
 }
 
 .portfolio-image:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   opacity: 1;
 }
