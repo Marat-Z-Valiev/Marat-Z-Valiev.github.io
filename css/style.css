@@ -157,8 +157,21 @@ body {
   margin-top: 30px;
 }
 
+.contact .icons p:last-of-type {
+  font-size: 1.5em;
+}
+
+.contact .github-link {
+  text-decoration: none;
+}
+
+.contact .github-link:hover {
+  color: #7AD1FF;
+}
+
 .contact .scrollTop {
   float: right;
+  margin-top: 20px;
 }
 
 .contact .scrollTop:hover {
@@ -202,6 +215,9 @@ body {
   }
   .contact .icons {
     margin-right: 20px;
+  }
+  .contact .icons p:last-of-type {
+    font-size: 1.2em;
   }
   .contact .scrollTop {
     float: none;
