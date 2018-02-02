@@ -173,6 +173,11 @@ body {
   .copyright {
     font-weight: bold;
     margin-top: 30px;
+
+    span{
+    font-family: $main-font;
+    font-size: 1.3em;
+    }
   }
 
   .icons p:last-of-type{
