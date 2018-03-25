@@ -1,8 +1,8 @@
 //Highlight the element in the header
-$('.nav-item a').on('click', function() {
-  $(".nav-item").removeClass("active");
-  $(this).parent().addClass("active");
-});
+  $('.nav-item a').on('click', function() {
+    $(".nav-item").removeClass("active");
+    $(this).parent().addClass("active");
+  });
 
 //Scroll to selected section
 $(function() {
