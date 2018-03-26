@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const minify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
 const cssmin = require('gulp-cssmin');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
@@ -41,6 +42,11 @@ gulp.task('minify-css', () => gulp.src('css/style.css')
 
 //Minify
 gulp.task('minify', ['minify-js','minify-css']);
+
+//Images compress
+gulp.task('image', () => gulp.src('images/*')
+.pipe(imagemin())
+.pipe(gulp.dest('images/dest')));
 
 //Watch tasks
 gulp.task('serve', function(){
