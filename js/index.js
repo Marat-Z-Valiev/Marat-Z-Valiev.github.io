@@ -13,7 +13,6 @@ $(function() {
     }, 750);
   });
 });
-
 //Hide the menu after click
 if($(window).width() < 991){
   $('.navbar-nav a').on('click', function() {
