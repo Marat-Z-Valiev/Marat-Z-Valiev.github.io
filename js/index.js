@@ -1,6 +1,5 @@
 //Highlight the element in the header
   $('.nav-item a').on('click', function() {
-    console.log('test');
     $('.nav-item').removeClass('active');
     $(this).parent().addClass('active');
   });
@@ -17,17 +16,13 @@ $(function() {
 
 //Highlight menu items on scroll
 $(function() {
-
   const aboutSection = $('#about').offset().top - 60;
   const portfolioSection = $('#portfolio').offset().top - 60;
   const contactSection = $('#contact').offset().top - 575;
     
   $(document).on('scroll', function() {
-    
   const scrollTop = $(document).scrollTop();
-  
   let activeElement;
-  
   if(scrollTop < aboutSection){
     activeElement = $('.navbar-nav>li:nth-child(1)');
   }
@@ -41,7 +36,7 @@ $(function() {
     activeElement = $('.navbar-nav>li:nth-child(4)');
   }
   activeElement.addClass('active');
-  $('.navbar-nav>li').not(activeElement).removeClass('active');
+  $('.navbar-nav > li').not(activeElement).removeClass('active');
   });
 });
 
